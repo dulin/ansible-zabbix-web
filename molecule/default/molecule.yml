@@ -23,27 +23,46 @@ platforms:
     privileged: True
     groups:
       - postgresql
-  - name: zabbix-web-mysql-debian
-    image: maint/debian-systemd
+  - name: zabbix-web-mysql-debian-buster
+    image: debian:buster
     privileged: True
     groups:
       - mysql
-  - name: zabbix-web-pgsql-debian
-    image: maint/debian-systemd
+  - name: zabbix-web-pgsql-debian-buster
+    image: debian:buster
     privileged: True
     groups:
       - postgresql
-
-#  - name: zabbix-web-mysql-ubuntu
-#    image: solita/ubuntu-systemd
-#    privileged: True
-#    groups:
-#      - mysql
-#  - name: zabbix-web-pgsql-ubuntu
-#    image: solita/ubuntu-systemd
-#    privileged: True
-#    groups:
-#      - postgresql
+  - name: zabbix-web-mysql-debian-stretch
+    image: debian:stretch
+    privileged: True
+    groups:
+      - mysql
+  - name: zabbix-web-pgsql-debian-stretch
+    image: debian:stretch
+    privileged: True
+    groups:
+      - postgresql
+  - name: zabbix-web-mysql-debian-jessie
+    image: debian:jessie
+    privileged: True
+    groups:
+      - mysql
+  - name: zabbix-web-pgsql-debian-jessie
+    image: debian:jessie
+    privileged: True
+    groups:
+      - postgresql
+ - name: zabbix-web-mysql-ubuntu
+   image: solita/ubuntu-systemd
+   privileged: True
+   groups:
+     - mysql
+ - name: zabbix-web-pgsql-ubuntu
+   image: solita/ubuntu-systemd
+   privileged: True
+   groups:
+     - postgresql
 
 provisioner:
   name: ansible
