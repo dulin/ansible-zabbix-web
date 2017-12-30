@@ -53,16 +53,36 @@ platforms:
     privileged: True
     groups:
       - postgresql
- - name: zabbix-web-mysql-ubuntu
-   image: solita/ubuntu-systemd
-   privileged: True
-   groups:
-     - mysql
- - name: zabbix-web-pgsql-ubuntu
-   image: solita/ubuntu-systemd
-   privileged: True
-   groups:
-     - postgresql
+  - name: zabbix-web-mysql-ubuntu-17.04
+    image: ubuntu:17.04
+    privileged: True
+    groups:
+      - mysql
+  - name: zabbix-web-pgsql-ubuntu-17.04
+    image: ubuntu:17.04
+    privileged: True
+    groups:
+      - postgresql
+  - name: zabbix-web-mysql-ubuntu-16.04
+    image: ubuntu:16.04
+    privileged: True
+    groups:
+      - mysql
+  - name: zabbix-web-pgsql-ubuntu-16.04
+    image: ubuntu:16.04
+    privileged: True
+    groups:
+      - postgresql
+  - name: zabbix-web-mysql-ubuntu-14.04
+    image: ubuntu:14.04
+    privileged: True
+    groups:
+      - mysql
+  - name: zabbix-web-pgsql-ubuntu-14.04
+    image: ubuntu:14.04
+    privileged: True
+    groups:
+      - postgresql
 
 provisioner:
   name: ansible

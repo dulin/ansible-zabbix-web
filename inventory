@@ -1,9 +1,17 @@
 [postgresql]
 zabbix-web-pgsql-centos ansible_connection=docker
-zabbix-web-pgsql-debian ansible_connection=docker
-zabbix-web-pgsql-ubuntu ansible_connection=docker
+zabbix-web-pgsql-debian-buster ansible_connection=docker
+zabbix-web-pgsql-debian-stretch ansible_connection=docker
+zabbix-web-pgsql-debian-jessie ansible_connection=docker
+zabbix-web-pgsql-ubuntu-17.04 ansible_connection=docker
+zabbix-web-pgsql-ubuntu-16.04 ansible_connection=docker
+zabbix-web-pgsql-ubuntu-14.04 ansible_connection=docker
 
 [mysql]
 zabbix-web-mysql-centos ansible_connection=docker
-zabbix-web-mysql-debian ansible_connection=docker
-zabbix-web-mysql-ubuntu ansible_connection=docker
+zabbix-web-mysql-debian-buster ansible_connection=docker
+zabbix-web-mysql-debian-stretch ansible_connection=docker
+zabbix-web-mysql-debian-jessie ansible_connection=docker
+zabbix-web-mysql-ubuntu-17.04 ansible_connection=docker
+zabbix-web-mysql-ubuntu-16.04 ansible_connection=docker
+zabbix-web-pgsql-ubuntu-14.04 ansible_connection=docker
